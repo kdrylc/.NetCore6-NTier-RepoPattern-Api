@@ -1,0 +1,20 @@
+﻿@model nTier_RepositoryPattern.Entity.Author
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <h1>Author Create</h1>
+    <form method="post">
+        <div>
+            <input type="text" asp-for="Name" placeholder="Name" required="" class="form-control" />
+        </div>
+        <div>
+            <input type="text" asp-for="Surname" placeholder="Surname" required="" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

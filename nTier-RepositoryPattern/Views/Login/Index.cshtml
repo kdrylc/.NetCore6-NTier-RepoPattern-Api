@@ -1,0 +1,25 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="#" method="post">
+	<input type="text" asp-for="UserName" placeholder="Kullanıcı Ad" required="">
+	<input type="password" asp-for="Password" placeholder="Şifre" required="">
+
+	<div asp-validation-summary="ModelOnly"></div>
+	<ul class="agileinfotickwthree">
+		<li>
+			<input type="checkbox" id="brand1" value="" />
+			<label for="brand1"><span>Kullanım şartlarını okudum.!</span></label>
+			<br />
+			<a href="/Register/Index/">Bir hesabın yok mu?</a>
+		</li>
+	</ul>
+	<div class="aitssendbuttonw3ls">
+		<button class="btn btn-primary" type="submit" value="Giriş">
+
+		<div class="clear"></div>
+	</div>
+</form>

@@ -1,0 +1,41 @@
+﻿@using nTier_RepositoryPattern.DtoLayer.AppUserDto;
+@model AppUserRegisterDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h3>Kayıt Ol</h3>
+	<form action="#" method="post">
+		<div>
+			<input type="text" asp-for="Name" placeholder="Ad" required="" class="form-control">
+
+		</div>
+
+		<div>
+			<input type="text" asp-for="Surname" placeholder="Soyad" required="" class="form-control">
+
+		</div>
+		<div>
+			<input type="text" asp-for="Username" placeholder="Kullanıcı Ad" required="" class="form-control">
+		</div>
+		<div>
+			<input type="email" asp-for="Email" placeholder="Email" required="" class="form-control">
+		</div>
+		<div>
+			<input type="password" asp-for="Password" placeholder="Şifre" required="" class="form-control">
+		</div>
+		<div>
+			<input type="password" asp-for="ConfirmPassword" placeholder="Tekrar Şifre" required="" class="form-control">
+			<div asp-validation-summary="ModelOnly"></div>
+
+		</div>
+
+		<div class="aitssendbuttonw3ls">
+			<button class="btn btn-primary" type="submit" value="Kayıt"> </button>
+			<div class="clear"></div>
+		</div>
+	</form>
+
+</div>
